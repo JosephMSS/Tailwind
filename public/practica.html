@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body class="m-8">
+    <section class="flex flex-col block mb-8">
+      <h2
+        class="mb-2 text-center text-xl font-bold sm:text-left sm:text-blue-500 md:text-red-900 lg:text-green-900"
+      >
+        Colores y Dimensiones
+      </h2>
+      <button class="btn">Dimensiones</button>
+    </section>
+    <!-- sm:w-1/4 md:w-1/6  lg:w-1/6  -->
+    <section class="grid rounded-lg sm:grid-cols-6 sm:w-1/2 bg-blue-700">
+      <button
+        class="h-10 text-blue-300 bg-blue-700 rounded-lg hover:btn-hover transition duration-200 col-span-2"
+      >
+        Button 1
+      </button>
+      <button
+        class="h-10 text-blue-300 bg-blue-700 rounded-lg hover:btn-hover transition duration-200 col-span-2"
+      >
+        Button 2
+      </button>
+      <button
+        class="h-10 text-blue-300 bg-blue-700 rounded-lg hover:btn-hover transition duration-200 col-span-2"
+      >
+        Button 3
+      </button>
+    </section>
+    <section>
+        <h2class="text-center text-3xl">Alerts</h2>
+        <div class="w-100 ml-5">
+          <div class="alert alert-neutro">Esta es una alerta por default</div>
+          <div class="alert alert-danger">Este mensaje es un alerta danger</div>
+          <div class="alert alert-warning">
+            Este mensaje es un alerta warning
+          </div>
+          <div class="alert alert-info">Este mensaje es un alerta info</div>
+        </div>
+      </section>
+  </body>
+</html>

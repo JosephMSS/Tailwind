@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@variants hover{
+    .rotate-45{
+        transform: rotate(45deg);
+    }
+    .zoom{
+        transform: scale(1.05);
+    }
+    .btn-hover{
+        @apply text-blue-100 bg-blue-500 zoom 
+     }
+
+}
+.btn{
+    @apply h-10 text-blue-300 bg-blue-700 rounded-lg hover:btn-hover transition duration-200 sm:w-1/4 md:w-1/6  lg:w-1/6
+}
+.alert {
+    @apply py-2 px-4 text-lg text-center rounded border-solid w-full sm:w-80 mb-3;
+  }
+  .alert-neutro {
+    @apply py-2 px-4 rounded bg-gray-100 text-gray-500 border-gray-300;
+  }
+  
+  .alert-danger {
+    @apply py-2 px-4 rounded bg-red-100 text-red-500 border-red-300;
+  }
+  
+  .alert-warning {
+    @apply py-2 px-4 rounded bg-yellow-100 text-yellow-500 border-yellow-300;
+  }
+  
+  .alert-info {
+    @apply py-2 px-4 rounded bg-blue-100 text-blue-500 border-blue-300;
+  }
